@@ -1,4 +1,10 @@
-/*custom */
+/*
+App.css
+Chirag Jain
+301307988
+September 25th, 2022
+
+*/
 
 
 
@@ -9,6 +15,19 @@
     border: black;
     cursor: pointer;
     font-size: 20px;
+}
+
+.contact_btn {
+    background-color: white;
+    text-decoration: none;
+    color:black    
+
+}
+
+.contact_btn:hover {
+    background-color:black;
+    color: white;
+
 }
 
 .download_btn:hover{

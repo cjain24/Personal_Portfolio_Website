@@ -1,22 +1,26 @@
+/*
+Index.js
+Chirag Jain
+301307988
+September 25th, 2022
+
+*/
+
+
+
 var express = require('express');
 var router = express.Router();
 
-
-
-
- 
-
-
-
+//This is where all the routes for the index are created
  
 /* GET Home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home' }); //renders the home page
 });
 
 /* GET Home page. */
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home' }); //another way of rendering the home page
 });
 
 /* GET Contact Me page. */

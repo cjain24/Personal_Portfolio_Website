@@ -1,3 +1,14 @@
+/*
+App.js
+Chirag Jain
+301307988
+September 25th, 2022
+
+*/
+
+
+
+
 //all 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
@@ -8,13 +19,7 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 let logger = require('morgan');
-
-
 let indexRouter = require('./routes/index');
-
-
-
-
 
 
 let app = express();
@@ -25,16 +30,16 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded());
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static(path.join(__dirname ,'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
 
 app.post ('/send',function(req,res){
-  res.render('th')
+  console.log("this is working")
 
 });
 
