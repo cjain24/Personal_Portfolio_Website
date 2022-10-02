@@ -6,9 +6,6 @@ September 25th, 2022
 
 */
 
-
-
-
 //all 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
@@ -37,11 +34,6 @@ app.use(express.static(path.join(__dirname ,'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
-
-app.post ('/send',function(req,res){
-  console.log("this is working")
-
-});
 
 
 
